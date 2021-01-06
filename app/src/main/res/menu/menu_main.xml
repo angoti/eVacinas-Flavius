@@ -1,0 +1,36 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.iftm.flavius.evacinas.activitys.MainActivity">
+    <item
+        android:id="@+id/at_action_consultarhistoricoaciente"
+        android:orderInCategory="100"
+        android:title="@string/consultar_historico_paciente"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/at_action_listartodasasconsultas"
+        android:title="@string/listar_todas_consultas" />
+    <item
+        android:id="@+id/at_action_consultarparcientescadastrados"
+        android:title="@string/consultar_pacientes_cadastrados" />
+    <item
+        android:id="@+id/at_action_agendarretorno"
+        android:icon="@drawable/ic_action_agendarretorno"
+        android:title="@string/agendar_retorno"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/at_action_atualizarpaciente"
+        android:icon="@drawable/ic_action_atualizarpaciente"
+        android:title="@string/atualizar_paciente"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/at_action_procedimentosrealizados"
+        android:icon="@drawable/ic_action_registrarprocedimentosrealizados"
+        android:title="@string/procedimentos_realizados"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/at_action_savepaciente"
+        android:icon="@drawable/ic_action_savepaciente"
+        android:title="@string/salva_paciente"
+        app:showAsAction="ifRoom" />
+</menu>
