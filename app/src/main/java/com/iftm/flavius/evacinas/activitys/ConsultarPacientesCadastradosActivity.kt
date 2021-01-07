@@ -7,7 +7,7 @@ import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.iftm.flavius.evacinas.R
-import com.iftm.flavius.evacinas.adapters.ConsultaPacienteAdvice
+import com.iftm.flavius.evacinas.adapters.ConsultaPacienteAdapter
 import com.iftm.flavius.evacinas.dtos.ConsultarPacientesCadastradosDTO
 import com.iftm.flavius.evacinas.services.RetrofitService
 import retrofit2.Call
@@ -16,24 +16,10 @@ import retrofit2.Response
 
 class ConsultarPacientesCadastradosActivity : AppCompatActivity() {
 
-    val listDePacientes = ArrayList<ConsultarPacientesCadastradosDTO?>()
-    val recicleView = findViewById<RecyclerView>(R.id.recyclieview)
-    var adapter: ConsultaPacienteAdvice? = null
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_consultar_pacientes_cadastrados)
         buscaDados()
-    }
-
-    fun preencherLista(lista: List<ConsultarPacientesCadastradosDTO>?) {
-        for (i in 1..20){
-            listDePacientes.add(lista!![i])
-        }
-
-        adapter =  ConsultaPacienteAdvice(listDePacientes,this)
-        recicleView.layoutManager = LinearLayoutManager(this)
-        recicleView.adapter = adapter
     }
 
     fun buscaDados(){
@@ -51,14 +37,22 @@ class ConsultarPacientesCadastradosActivity : AppCompatActivity() {
                 response: Response<List<ConsultarPacientesCadastradosDTO>?>
             ) {
                 if (response.code() == 200){
-                   var lista:List<ConsultarPacientesCadastradosDTO>? = response.body()
-                    preencherLista(lista)
-                    Toast.makeText(this@ConsultarPacientesCadastradosActivity,"Listagem com Sucesso",
-                        Toast.LENGTH_LONG).show()
+                    var listaDePacientes = ArrayList<ConsultarPacientesCadastradosDTO>()
+                    for (paciente in response.body()!!)
+                        listaDePacientes.add(paciente)
+                    preencherLista(listaDePacientes)
                 }else{
                     Toast.makeText(this@ConsultarPacientesCadastradosActivity,"Erro ao Listar o Paciente", Toast.LENGTH_LONG).show()
                 }
             }
         })
+    }
+
+    private fun preencherLista(listaDePacientes: java.util.ArrayList<ConsultarPacientesCadastradosDTO>) {
+        Log.d("debug", "tamanho da lista: ${listaDePacientes.size}")
+        val recicleView = findViewById<RecyclerView>(R.id.recyclieview)
+        val adapter = ConsultaPacienteAdapter(listaDePacientes, this)
+        recicleView.layoutManager = LinearLayoutManager(this)
+        recicleView.adapter = adapter
     }
 }

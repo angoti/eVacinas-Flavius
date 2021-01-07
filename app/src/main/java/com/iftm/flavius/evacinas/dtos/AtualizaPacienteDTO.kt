@@ -1,21 +1,12 @@
 package com.iftm.flavius.evacinas.dtos
 
 
+data class AtualizaPacienteDTO(
+    val cpf: String,
 
-class AtualizaPacienteDTO {
-    var cpf: String? = null
+    val nome: String,
 
-    var nome: String? = null
+    val apelido: String,
 
-    var apelido: String? = null
-
-    var telefone: TelefoneDTO? = null
-
-
-    constructor(cpf: String?, nome: String?, apelido: String?, telefone: TelefoneDTO?) {
-        this.cpf = cpf
-        this.nome = nome
-        this.apelido = apelido
-        this.telefone = telefone
-    }
-}
+    val telefone: TelefoneDTO
+)

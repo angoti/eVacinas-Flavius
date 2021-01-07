@@ -1,17 +1,9 @@
 package com.iftm.flavius.evacinas.dtos
 
-class TelefoneDTO {
+data class TelefoneDTO(
+    val tipo: String,
 
-    var tipo: String? = null
+    val numero: String,
 
-    var numero: String? = null
-
-    var endereco: EnderecoDTO? = null
-
-
-    constructor(tipo: String?, numero: String?, endereco: EnderecoDTO?) {
-        this.tipo = tipo
-        this.numero = numero
-        this.endereco = endereco
-    }
-}
+    val endereco: EnderecoDTO
+)

@@ -1,52 +1,25 @@
 package com.iftm.flavius.evacinas.dtos
 
 
-import java.util.*
+data class CadastrarDadosCartaoVacinaDTO (
 
+    val cpf: String,
 
-class CadastrarDadosCartaoVacinaDTO {
+    val usuario: String,
 
-    var cpf: String? = null
+    val nome: String,
 
-    var usuario: String? = null
+    val procedimentos: String,
 
-    var nome: String? = null
+    val observacoesVacina: String,
 
-    var procedimentos: String? = null
+    val dose: String,
 
-    var observacoesVacina: String? = null
+    val dataAplicacao: String,
 
-    var dose: String? = null
+    val lote: String,
 
-    var dataAplicacao: String? = null
+    val dataVenc: String,
 
-    var lote: String? = null
-
-    var dataVenc: String? = null
-
-    var consulta: ConsultaDTO? = null
-
-    constructor(
-        cpf: String?,
-        usuario: String?,
-        nome: String?,
-        procedimentos: String?,
-        observacoesVacina: String?,
-        dose: String?,
-        dataAplicacao: String?,
-        lote: String?,
-        dataVenc: String?,
-        consulta: ConsultaDTO?
-    ) {
-        this.cpf = cpf
-        this.usuario = usuario
-        this.nome = nome
-        this.procedimentos = procedimentos
-        this.observacoesVacina = observacoesVacina
-        this.dose = dose
-        this.dataAplicacao = dataAplicacao
-        this.lote = lote
-        this.dataVenc = dataVenc
-        this.consulta = consulta
-    }
-}
+    var consulta: ConsultaDTO,
+    )

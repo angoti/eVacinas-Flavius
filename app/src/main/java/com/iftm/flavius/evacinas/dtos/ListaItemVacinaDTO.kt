@@ -2,19 +2,12 @@ package com.iftm.flavius.evacinas.dtos
 
 import java.util.*
 
-class ListaItemVacinaDTO {
-    var nome: String? = null
+data class ListaItemVacinaDTO(
+    val nome: String,
 
-    var observacoes: String? = null
+    val observacoes: String,
 
-    var dose: String? = null
+    val dose: String,
 
-    var dataAplicacao: Date? = null
-
-    constructor(nome: String?, observacoes: String?, dose: String?, dataAplicacao: Date?) {
-        this.nome = nome
-        this.observacoes = observacoes
-        this.dose = dose
-        this.dataAplicacao = dataAplicacao
-    }
-}
+    val dataAplicacao: Date
+)

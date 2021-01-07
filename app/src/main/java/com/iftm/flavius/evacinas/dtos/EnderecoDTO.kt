@@ -1,32 +1,15 @@
 package com.iftm.flavius.evacinas.dtos
 
-class EnderecoDTO {
+data class EnderecoDTO(
+    val rua: String,
 
-    var rua: String? = null
+    val numero: String,
 
-    var numero: String? = null
+    val bairro: String,
 
-    var bairro: String? = null
+    val estado: String,
 
-    var estado: String? = null
+    val cep: String,
 
-    var cep: String? = null
-
-    var cidade: String? = null
-
-    constructor(
-        rua: String?,
-        numero: String?,
-        bairro: String?,
-        estado: String?,
-        cep: String?,
-        cidade: String?
-    ) {
-        this.rua = rua
-        this.numero = numero
-        this.bairro = bairro
-        this.estado = estado
-        this.cep = cep
-        this.cidade = cidade
-    }
-}
+    val cidade: String
+)

@@ -3,16 +3,16 @@ package com.iftm.flavius.evacinas.dtos
 
 import java.util.*
 
-class ConsultarPacientesCadastradosDTO {
+data class ConsultarPacientesCadastradosDTO(
+    val dataCastro: Date,
 
-    var dataCastro: Date? = null
+    val cpf: String,
 
-    var cpf: String? = null
+    val nome: String,
 
-    var nome: String? = null
+    val apelido: String,
 
-    var apelido: String? = null
+    val telefone: TelefoneDTO
+)
 
-    var telefone: TelefoneDTO? = null
-
-}
+    
