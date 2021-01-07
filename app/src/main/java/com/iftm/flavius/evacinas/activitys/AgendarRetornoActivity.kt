@@ -26,7 +26,7 @@ class AgendarRetornoActivity : AppCompatActivity() {
         var data = (findViewById<EditText>(R.id.et_agenda_retorno_consulta_horario)).text.toString()
         var local = (findViewById<EditText>(R.id.et_agenda_retorno_consulta_local)).text.toString()
 
-        var consulta: ConsultaDTO = ConsultaDTO(data, local, 1)
+        var consulta: ConsultaDTO = ConsultaDTO(data, local)
         var agedarRetorno: AgendarRetornoDTO = AgendarRetornoDTO(cpf, usuario, consulta)
 
         RetrofitService().api?.agendarRetorno(agedarRetorno)?.enqueue(object : Callback<AgendarRetornoDTO?>{

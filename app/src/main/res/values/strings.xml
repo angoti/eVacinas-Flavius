@@ -21,4 +21,13 @@
     <string name="data">Data</string>
     <string name="usuario">Usuario</string>
     <string name="button">Button</string>
+    <string name="nome">Nome</string>
+    <string name="observa_o">Observação</string>
+    <string name="dose">Dose</string>
+    <string name="data_aplica_o">Data Aplicação</string>
+    <string name="lote">Lote</string>
+    <string name="data_vencimento">Data Vencimento</string>
+    <string name="data_hora_consulta">Data Hora Consulta</string>
+    <string name="local_consulta">Local Consulta</string>
+    <string name="gravar_procedimentos">Gravar Procedimentos</string>
 </resources>

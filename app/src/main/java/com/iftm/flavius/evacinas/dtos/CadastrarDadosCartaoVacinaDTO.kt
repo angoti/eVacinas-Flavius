@@ -18,12 +18,35 @@ class CadastrarDadosCartaoVacinaDTO {
 
     var dose: String? = null
 
-    var dataAplicacao: Date? = null
+    var dataAplicacao: String? = null
 
-    var lote: Int? = null
+    var lote: String? = null
 
-    var dataVenc: Date? = null
+    var dataVenc: String? = null
 
     var consulta: ConsultaDTO? = null
 
+    constructor(
+        cpf: String?,
+        usuario: String?,
+        nome: String?,
+        procedimentos: String?,
+        observacoesVacina: String?,
+        dose: String?,
+        dataAplicacao: String?,
+        lote: String?,
+        dataVenc: String?,
+        consulta: ConsultaDTO?
+    ) {
+        this.cpf = cpf
+        this.usuario = usuario
+        this.nome = nome
+        this.procedimentos = procedimentos
+        this.observacoesVacina = observacoesVacina
+        this.dose = dose
+        this.dataAplicacao = dataAplicacao
+        this.lote = lote
+        this.dataVenc = dataVenc
+        this.consulta = consulta
+    }
 }

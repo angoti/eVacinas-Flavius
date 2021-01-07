@@ -6,4 +6,148 @@
     android:layout_height="match_parent"
     tools:context=".activitys.RegistrarProcedimentoRealizadosActivity">
 
+    <EditText
+        android:id="@+id/et_registrar_procedimento_cpf"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="@string/cpf"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/et_registrar_procedimento_dose"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/dose"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_registrar_procedimento_observacao"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/et_registrar_procedimento_usuario"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/usuario"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_registrar_procedimento_cpf"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/et_registrar_procedimento_observacao"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/observa_o"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_registrar_procedimento_procedimentos"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/et_registrar_procedimento_nome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/nome"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_registrar_procedimento_usuario" />
+
+    <EditText
+        android:id="@+id/et_registrar_procedimento_consulta_hora"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/data_hora_consulta"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_registrar_procedimento_data_venc"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/et_registrar_procedimento_lote"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="@string/lote"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_registrar_procedimento_data_aplicacao"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/et_registrar_procedimento_data_venc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/data_vencimento"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_registrar_procedimento_lote"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/et_registrar_procedimento_consulta_local"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/local_consulta"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_registrar_procedimento_consulta_hora"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/et_registrar_procedimento_procedimentos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/procedimentos_realizados"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_registrar_procedimento_nome"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/et_registrar_procedimento_data_aplicacao"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/data_aplica_o"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_registrar_procedimento_dose"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/button_registrar_procedimento_realizado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="registrarProcedimentos"
+        android:text="@string/gravar_procedimentos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_registrar_procedimento_consulta_local" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
