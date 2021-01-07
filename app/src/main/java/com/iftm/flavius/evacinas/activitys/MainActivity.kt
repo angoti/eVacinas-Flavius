@@ -37,8 +37,6 @@ class MainActivity : AppCompatActivity() {
                 AgendarRetornoActivity::class.java))
             R.id.at_action_atualizarpaciente ->startActivity(Intent(this,
                 AtualizaPacienteActivity::class.java))
-            R.id.at_action_consultarhistoricoaciente ->startActivity(Intent(this,
-                ConsultarHistoricoPacienteActivity::class.java))
             R.id.at_action_consultarparcientescadastrados ->startActivity(Intent(this,
                 ConsultarPacientesCadastradosActivity::class.java))
             R.id.at_action_listartodasasconsultas ->startActivity(Intent(this,
