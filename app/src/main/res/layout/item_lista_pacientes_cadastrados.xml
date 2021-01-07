@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_item_paciente_telefone_endereco_estado"
+        android:layout_width="190dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/estado"
+        app:layout_constraintStart_toEndOf="@+id/tv_item_paciente_telefone_endereco_bairro"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_paciente_telefone_endereco_cidade" />
+
+    <TextView
+        android:id="@+id/tv_item_paciente_cpf"
+        android:layout_width="150dp"
+        android:layout_height="19dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/cpf"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_item_paciente_telefone_endereco_bairro"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="4dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/bairro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_paciente_telefone_endereco_rua" />
+
+    <TextView
+        android:id="@+id/tv_item_paciente_apelido"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/apelido"
+        app:layout_constraintStart_toEndOf="@+id/tv_item_paciente_nome"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_item_paciente_telefone_endereco_cep"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="4dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/cep"
+        app:layout_constraintStart_toEndOf="@+id/tv_item_paciente_telefone_numero"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_paciente_nome" />
+
+    <TextView
+        android:id="@+id/tv_item_paciente_telefone_tipo"
+        android:layout_width="110dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="4dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/tipo_telefone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_paciente_cpf" />
+
+    <TextView
+        android:id="@+id/tv_item_paciente_telefone_numero"
+        android:layout_width="130dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="4dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/numero_tel"
+        app:layout_constraintStart_toEndOf="@+id/tv_item_paciente_telefone_tipo"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_paciente_nome" />
+
+    <TextView
+        android:id="@+id/tv_item_paciente_telefone_endereco_numero"
+        android:layout_width="65dp"
+        android:layout_height="25dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/numero_rua"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_item_paciente_telefone_endereco_cep"
+        app:layout_constraintStart_toEndOf="@+id/tv_item_paciente_telefone_endereco_cep" />
+
+    <TextView
+        android:id="@+id/tv_item_paciente_telefone_endereco_cidade"
+        android:layout_width="190dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/cidade"
+        app:layout_constraintStart_toEndOf="@+id/tv_item_paciente_telefone_endereco_rua"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_paciente_telefone_endereco_cep" />
+
+    <TextView
+        android:id="@+id/tv_item_paciente_telefone_endereco_rua"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="4dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/rua"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_paciente_telefone_tipo" />
+
+    <TextView
+        android:id="@+id/tv_item_paciente_nome"
+        android:layout_width="150dp"
+        android:layout_height="19dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/nome"
+        app:layout_constraintStart_toEndOf="@+id/tv_item_paciente_cpf"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

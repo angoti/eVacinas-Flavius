@@ -1,14 +1,8 @@
 package com.iftm.flavius.evacinas.services
 
-import com.iftm.flavius.evacinas.dtos.AgendarRetornoDTO
-import com.iftm.flavius.evacinas.dtos.AtualizaPacienteDTO
-import com.iftm.flavius.evacinas.dtos.CadastrarDadosCartaoVacinaDTO
-import com.iftm.flavius.evacinas.dtos.CadastrarPacienteDTO
+import com.iftm.flavius.evacinas.dtos.*
 import retrofit2.Call
-import retrofit2.http.Body
-import retrofit2.http.PATCH
-import retrofit2.http.POST
-import retrofit2.http.Path
+import retrofit2.http.*
 
 public interface InterfaceDeServicos {
 
@@ -23,5 +17,8 @@ public interface InterfaceDeServicos {
 
     @PATCH("/paciente")
     fun atualizaPaciente(@Body user: AtualizaPacienteDTO?): Call<AtualizaPacienteDTO>?
+
+    @GET("/paciente")
+    fun buscarPaciente():Call<List<ConsultarPacientesCadastradosDTO>?>?
 
 }
