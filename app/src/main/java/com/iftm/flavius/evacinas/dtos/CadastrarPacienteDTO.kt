@@ -13,6 +13,10 @@ class CadastrarPacienteDTO {
 
     var telefone: TelefoneDTO? = null
 
-    var dataCastro: Date? = null
-
+    constructor(cpf: String?, nome: String?, apelido: String?, telefone: TelefoneDTO?) {
+        this.cpf = cpf
+        this.nome = nome
+        this.apelido = apelido
+        this.telefone = telefone
+    }
 }

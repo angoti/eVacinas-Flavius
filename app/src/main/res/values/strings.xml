@@ -30,4 +30,14 @@
     <string name="data_hora_consulta">Data Hora Consulta</string>
     <string name="local_consulta">Local Consulta</string>
     <string name="gravar_procedimentos">Gravar Procedimentos</string>
+    <string name="apelido">Apelido</string>
+    <string name="tipo_telefone">Tipo Telefone</string>
+    <string name="numero_tel">Numero Tel.</string>
+    <string name="rua">Rua</string>
+    <string name="bairro">Bairro</string>
+    <string name="numero_rua">Numero Rua</string>
+    <string name="cidade">Cidade</string>
+    <string name="estado">Estado</string>
+    <string name="cep">Cep.</string>
+    <string name="cadastrar_paciente">Cadastrar Paciente</string>
 </resources>
