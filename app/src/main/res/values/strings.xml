@@ -40,4 +40,5 @@
     <string name="estado">Estado</string>
     <string name="cep">Cep.</string>
     <string name="cadastrar_paciente">Cadastrar Paciente</string>
+
 </resources>
