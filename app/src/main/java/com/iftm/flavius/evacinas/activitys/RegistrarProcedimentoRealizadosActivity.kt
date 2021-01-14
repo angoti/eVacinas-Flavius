@@ -22,14 +22,14 @@ class RegistrarProcedimentoRealizadosActivity : AppCompatActivity() {
 
     fun registrarProcedimentos(view: View) {
         var cpf = (findViewById<EditText>(R.id.et_registrar_procedimento_cpf)).text.toString()
-        var usuario = (findViewById<EditText>(R.id.et_registrar_procedimento_cpf)).text.toString()
-        var nome = (findViewById<EditText>(R.id.et_registrar_procedimento_cpf)).text.toString()
-        var procedimento = (findViewById<EditText>(R.id.et_registrar_procedimento_cpf)).text.toString()
-        var observacao = (findViewById<EditText>(R.id.et_registrar_procedimento_cpf)).text.toString()
-        var dose = (findViewById<EditText>(R.id.et_registrar_procedimento_cpf)).text.toString()
-        var dataAplicacao = (findViewById<EditText>(R.id.et_registrar_procedimento_cpf)).text.toString()
-        var lote = (findViewById<EditText>(R.id.et_registrar_procedimento_cpf)).text.toString()
-        var dataVenc = (findViewById<EditText>(R.id.et_registrar_procedimento_cpf)).text.toString()
+        var usuario = (findViewById<EditText>(R.id.et_registrar_procedimento_usuario)).text.toString()
+        var nome = (findViewById<EditText>(R.id.et_registrar_procedimento_nome)).text.toString()
+        var procedimento = (findViewById<EditText>(R.id.et_registrar_procedimento_procedimentos)).text.toString()
+        var observacao = (findViewById<EditText>(R.id.et_registrar_procedimento_observacao)).text.toString()
+        var dose = (findViewById<EditText>(R.id.et_registrar_procedimento_dose)).text.toString()
+        var dataAplicacao = (findViewById<EditText>(R.id.et_registrar_procedimento_data_aplicacao)).text.toString()
+        var lote = (findViewById<EditText>(R.id.et_registrar_procedimento_lote)).text.toString()
+        var dataVenc = (findViewById<EditText>(R.id.et_registrar_procedimento_data_venc)).text.toString()
 
         var horaConsulta = (findViewById<EditText>(R.id.et_registrar_procedimento_consulta_hora)).text.toString()
         var localConsulta = (findViewById<EditText>(R.id.et_registrar_procedimento_consulta_local)).text.toString()

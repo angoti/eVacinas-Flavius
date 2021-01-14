@@ -3,9 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.iftm.flavius.evacinas.activitys.MainActivity">
     <item
-        android:id="@+id/at_action_listartodasasconsultas"
-        android:title="@string/listar_todas_consultas" />
-    <item
         android:id="@+id/at_action_consultarparcientescadastrados"
         android:title="@string/consultar_pacientes_cadastrados" />
     <item

@@ -39,8 +39,6 @@ class MainActivity : AppCompatActivity() {
                 AtualizaPacienteActivity::class.java))
             R.id.at_action_consultarparcientescadastrados ->startActivity(Intent(this,
                 ConsultarPacientesCadastradosActivity::class.java))
-            R.id.at_action_listartodasasconsultas ->startActivity(Intent(this,
-                ListaTodasAsConsultasActivity::class.java))
             R.id.at_action_procedimentosrealizados ->startActivity(Intent(this,
                 RegistrarProcedimentoRealizadosActivity::class.java))
             R.id.at_action_savepaciente ->startActivity(Intent(this,

@@ -35,7 +35,7 @@ class AgendarRetornoActivity : AppCompatActivity() {
                 response: Response<AgendarRetornoDTO?>
             ) {
                 if (response.code() == 200){
-                    Toast.makeText(this@AgendarRetornoActivity,"Usuario Cadastrado com Sucesso",Toast.LENGTH_LONG).show()
+                    Toast.makeText(this@AgendarRetornoActivity,"Retorno Cadastrado com Sucesso",Toast.LENGTH_LONG).show()
                 }else{
                     Toast.makeText(this@AgendarRetornoActivity,"Erro ao Cadastrar Usuario",Toast.LENGTH_LONG).show()
                 }
