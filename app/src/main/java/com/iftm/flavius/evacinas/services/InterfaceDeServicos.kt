@@ -4,7 +4,7 @@ import com.iftm.flavius.evacinas.dtos.*
 import retrofit2.Call
 import retrofit2.http.*
 
-public interface InterfaceDeServicos {
+interface InterfaceDeServicos {
 
     @POST("/consulta/agendar_retorno")
     fun agendarRetorno(@Body user: AgendarRetornoDTO?): Call<AgendarRetornoDTO?>?
@@ -21,4 +21,6 @@ public interface InterfaceDeServicos {
     @GET("/paciente")
     fun buscarPaciente():Call<List<ConsultarPacientesCadastradosDTO>?>?
 
+    @GET("/usuario/vacinas/{id}")
+    fun buscarHistoricoPaciente(@Path("id") id : Int):Call<List<ItemVacinaDTO>>
 }
